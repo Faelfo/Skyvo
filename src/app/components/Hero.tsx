@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router";
 import "../../styles/components/hero.css";
+import logoImg from "../../assets/logo.png";
 import React from "react";
 
 export function Hero() {
@@ -22,10 +23,9 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <img src="/logo.png"
-               alt="SKYVO_"
-               className="hero-logo-img"   
-          />
+          <img src={logoImg}
+            alt="SKYVO_"
+            className="hero-logo-img" />
         </motion.div>
 
         <motion.p

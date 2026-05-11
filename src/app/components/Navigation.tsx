@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { NavLink, Link } from "react-router";
 import "../../styles/components/navigation.css";
 import React from "react";
+import logoImg from "../../assets/logo.png";
 
 const navItems = [
   { name: "Sobre", to: "/sobre" },
@@ -29,7 +30,8 @@ export function Navigation() {
         <div className="nav-bar">
           <motion.div whileHover={{ scale: 1.05 }}>
             <Link to="/">
-              <img src="/logo.png" alt="SKYVO_" className="nav-logo-img" />
+            <img src={logoImg} alt="SKYVO_"
+             className="nav-logo-img" />
             </Link>
           </motion.div>
 
