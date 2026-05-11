@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "deploy": "npm run build && gh-pages -d dist",
-    "build": "vite build",
+    "build": "tsc -b && vite build",
     "dev": "vite"
   },
   "dependencies": {
