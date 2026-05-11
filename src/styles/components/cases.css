@@ -1,0 +1,123 @@
+.cases-section {
+  padding: 2rem 1.5rem;
+  overflow: hidden;
+}
+
+.cases-glow {
+  position: absolute;
+  bottom: 0;
+  left: 33%;
+  width: 500px;
+  height: 500px;
+  background: rgba(59, 130, 246, 0.12);
+  border-radius: 50%;
+  filter: blur(120px);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.cases-inner {
+  max-width: 72rem;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.cases-header {
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.cases-label {
+  color: #3b82f6;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.cases-heading {
+  color: white;
+  font-size: clamp(1.875rem, 4vw, 2.5rem);
+  margin-bottom: 1rem;
+}
+
+.cases-sub {
+  color: #9ca3af;
+  font-size: 1.125rem;
+}
+
+.cases-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .cases-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .cases-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.case-card {
+  position: relative;
+  background: #09090b;
+  border: 1px solid #27272a;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  overflow: hidden;
+}
+
+.case-card:hover {
+  border-color: rgba(59, 130, 246, 0.5);
+}
+
+.case-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom right, rgba(59, 130, 246, 0.1), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.case-card:hover .case-card-overlay {
+  opacity: 1;
+}
+
+.case-card-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.case-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  background: #3b82f6;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.case-card:hover .case-dot {
+  transform: scale(1.5);
+}
+
+.case-title {
+  color: white;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.case-desc {
+  color: #6b7280;
+  font-size: 0.875rem;
+}
