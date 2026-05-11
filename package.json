@@ -1,10 +1,11 @@
 {
   "name": "@figma/my-make-file",
-  "homepage": "https://faelfo.github.io/Skyvo_/",
+  "homepage": "https://faelfo.github.io/Skyvo",
   "private": true,
   "version": "0.0.1",
   "type": "module",
   "scripts": {
+    "deploy": "npm run build && gh-pages -d dist",
     "build": "vite build",
     "dev": "vite"
   },
@@ -91,4 +92,6 @@
     }
   }
 }
+
+
 
