@@ -1,5 +1,6 @@
 {
   "name": "@figma/my-make-file",
+  "homepage": "https://faelfo.github.io/Skyvo_/",
   "private": true,
   "version": "0.0.1",
   "type": "module",
@@ -68,6 +69,7 @@
   "devDependencies": {
     "@tailwindcss/vite": "4.1.12",
     "@vitejs/plugin-react": "4.7.0",
+    "gh-pages": "^6.3.0",
     "tailwindcss": "4.1.12",
     "vite": "6.3.5"
   },
@@ -89,3 +91,4 @@
     }
   }
 }
+
