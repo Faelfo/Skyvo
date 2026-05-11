@@ -30,5 +30,5 @@ export default defineConfig({
 
   assetsInclude: ['**/*.svg', '**/*.csv'],
 
-  base: '/Skyvo/',
+  base: '/',
 })
