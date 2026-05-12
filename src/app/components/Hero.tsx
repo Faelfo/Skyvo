@@ -8,24 +8,18 @@ import React from "react";
 export function Hero() {
   return (
     <section className="hero-section">
-      {/* Grid overlay */}
       <div className="hero-grid" />
-
-      {/* Blue glows */}
       <div className="hero-glow-center" />
       <div className="hero-glow-bl" />
       <div className="hero-glow-tr" />
 
-      {/* Content */}
       <div className="hero-content">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <img src={logoImg}
-            alt="SKYVO_"
-            className="hero-logo-img" />
+          <img src={logoImg} alt="SKYVO_" className="hero-logo-img" />
         </motion.div>
 
         <motion.p
@@ -57,15 +51,6 @@ export function Hero() {
           </Link>
         </motion.div>
       </div>
-
-      {/* Scroll indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1 }}
-        className="hero-scroll-indicator"
-      >
-      </motion.div>
     </section>
   );
 }
