@@ -1,15 +1,17 @@
 /* ── Shared page background ── */
 .page-bg {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  background: linear-gradient(to bottom, #0a0a1a, #0f1729, #1a1f3a);
+  .page-bg {
+    position: relative;
+    min-height: 100vh;
+    height: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #0a0a1a, #0f1729, #1a1f3a);
 }
 
 .page-cloud-layer {
-  position: absolute;
+  position: fixed;
   inset: 0;
   background-image: url("https://images.unsplash.com/photo-1728062816724-57b626d1affc?w=1920&q=80");
   background-size: cover;
@@ -20,7 +22,7 @@
 }
 
 .page-overlay-blue {
-  position: absolute;
+  position: fixed;
   inset: 0;
   background-color: rgba(23, 37, 84, 0.75);
   mix-blend-mode: multiply;
@@ -28,7 +30,7 @@
 }
 
 .page-overlay-gradient {
-  position: absolute;
+  position: fixed;
   inset: 0;
   background: linear-gradient(to bottom, rgba(23, 37, 84, 0.4), transparent, rgba(23, 37, 84, 0.4));
   pointer-events: none;
