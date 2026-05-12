@@ -6,7 +6,6 @@ import React from "react";
 import logoImg from "../../assets/logo.png";
 
 const navItems = [
-  { name: "Home", to: "/" },
   { name: "Sobre", to: "/sobre" },
   { name: "Serviços", to: "/servicos" },
   { name: "Cases", to: "/cases" },
