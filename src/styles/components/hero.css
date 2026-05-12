@@ -1,5 +1,6 @@
 .hero-section {
-  min-height: unset;
+  position: relative;
+  width: 100%;
   flex: 1;
   display: flex;
   align-items: center;
@@ -152,4 +153,18 @@
   height: 0.375rem;
   background: #3b82f6;
   border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .hero-logo-img {
+    width: clamp(200px, 80vw, 400px);
+  }
+
+  .hero-tagline {
+    font-size: 1rem;
+  }
+
+  .hero-description {
+    font-size: 0.875rem;
+  }
 }
