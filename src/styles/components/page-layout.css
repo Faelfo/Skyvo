@@ -52,6 +52,7 @@
   .page-bg {
     height: 100vh;
     overflow: hidden;
+    justify-content: space-between;
   }
 }
 
@@ -62,7 +63,6 @@
   padding: 0.6rem 1.5rem;
   text-align: center;
   flex-shrink: 0;
-  margin-top: auto;
 }
 
 .footer p {
