@@ -1,19 +1,11 @@
 /* ── Shared page background ── */
 .page-bg {
-    position: relative;
-    min-height: 100vh;
-    height: auto;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(to bottom, #0a0a1a, #0f1729, #1a1f3a);
-}
-
-@media (min-width: 769px) {
-  .page-bg {
-    height: 100vh;
-    overflow: hidden;
-  }
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #0a0a1a, #0f1729, #1a1f3a);
 }
 
 .page-cloud-layer {
@@ -25,6 +17,7 @@
   background-repeat: no-repeat;
   opacity: 0.28;
   pointer-events: none;
+  z-index: 0;
 }
 
 .page-overlay-blue {
@@ -33,6 +26,7 @@
   background-color: rgba(23, 37, 84, 0.75);
   mix-blend-mode: multiply;
   pointer-events: none;
+  z-index: 0;
 }
 
 .page-overlay-gradient {
@@ -40,25 +34,35 @@
   inset: 0;
   background: linear-gradient(to bottom, rgba(23, 37, 84, 0.4), transparent, rgba(23, 37, 84, 0.4));
   pointer-events: none;
+  z-index: 0;
 }
 
 .page-content {
   position: relative;
   z-index: 10;
+  flex: 1;
   padding-top: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+/* Desktop — sem scroll */
+@media (min-width: 769px) {
+  .page-bg {
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
 /* ── Footer ── */
 .footer {
   position: relative;
   z-index: 10;
-  /* border-top removido aqui */
   padding: 0.6rem 1.5rem;
   text-align: center;
   flex-shrink: 0;
+  margin-top: auto;
 }
 
 .footer p {
@@ -75,7 +79,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2.50rem;
+  gap: 1.25rem;
   margin-bottom: 0.4rem;
 }
 
